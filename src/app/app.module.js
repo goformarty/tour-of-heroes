@@ -27,13 +27,28 @@ AppModule = __decorate([
                 {
                     path: 'heroes',
                     component: heroes_component_1.HeroesComponent
-                }
+                },
+                {
+                    path: 'dashboard',
+                    component: DashboardComponent
+                },
+                {
+                    path: '',
+                    redirectTo: '/dashboard',
+                    pathMatch: 'full'
+                },
+                {
+                    path: '',
+                    redirectTo: '/dashboard',
+                    pathMatch: 'full'
+                },
             ])
         ],
         declarations: [
             app_component_1.AppComponent,
             hero_detail_component_1.HeroDetailComponent,
-            heroes_component_1.HeroesComponent
+            heroes_component_1.HeroesComponent,
+            DashboardComponent
         ],
         providers: [
             hero_service_1.HeroService
