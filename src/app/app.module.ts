@@ -4,10 +4,10 @@ import { FormsModule }    from '@angular/forms';
 import { RouterModule }   from '@angular/router';
 
 import { AppComponent }        from './app.component';
+import { DashboardComponent }   from './dashboard.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
-
 
 
 @NgModule({
@@ -36,11 +36,11 @@ import { HeroService }         from './hero.service';
     ])
   ],
   declarations: [
-    AppComponent,
-    HeroDetailComponent,
-    HeroesComponent,
-    DashboardComponent
-  ],
+  AppComponent,
+  DashboardComponent,
+  HeroDetailComponent,
+  HeroesComponent
+],
   providers: [
     HeroService
   ],

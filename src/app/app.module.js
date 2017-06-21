@@ -10,6 +10,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
+var dashboard_component_1 = require("./dashboard.component");
 var hero_detail_component_1 = require("./hero-detail.component");
 var heroes_component_1 = require("./heroes.component");
 var hero_service_1 = require("./hero.service");
@@ -30,7 +31,7 @@ AppModule = __decorate([
                 },
                 {
                     path: 'dashboard',
-                    component: DashboardComponent
+                    component: dashboard_component_1.DashboardComponent
                 },
                 {
                     path: '',
@@ -46,9 +47,9 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
+            dashboard_component_1.DashboardComponent,
             hero_detail_component_1.HeroDetailComponent,
-            heroes_component_1.HeroesComponent,
-            DashboardComponent
+            heroes_component_1.HeroesComponent
         ],
         providers: [
             hero_service_1.HeroService
